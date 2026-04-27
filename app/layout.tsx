@@ -3,6 +3,8 @@ import { Inter, Bebas_Neue } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
+import { Chatbot } from "@/components/chatbot";
+import { ScrollToTop } from "@/components/scroll-to-top";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -61,9 +63,11 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${bebas.variable}`}>
       <body>
+        <ScrollToTop />
         <Header />
         <main>{children}</main>
         <Footer />
+        <Chatbot />
       </body>
     </html>
   );

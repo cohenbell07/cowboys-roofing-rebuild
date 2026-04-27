@@ -62,17 +62,22 @@ export default function AboutPage() {
           </Reveal>
 
           <Reveal delay={0.08} className="lg:col-span-5 order-1 lg:order-2">
-            <div className="relative aspect-[4/5] rounded-2xl overflow-hidden ring-1 ring-white/10">
+            <div className="relative aspect-[4/5] rounded-2xl overflow-hidden ring-1 ring-white/10 shadow-2xl shadow-black/40">
               <Image
-                src="/photos/finished-navy.webp"
-                alt="A Calgary home recently finished by Cowboys Roofing & Exteriors"
+                src="/photos/aerial-1.webp"
+                alt="Drone view of a completed Calgary roof installed by Cowboys Roofing & Exteriors"
                 fill
                 sizes="(min-width: 1024px) 40vw, 90vw"
                 priority
                 className="object-cover"
               />
-              <div className="absolute bottom-4 left-4 right-4 bg-black/55 backdrop-blur-sm text-white text-xs px-3 py-2 rounded-md">
-                A finished Cowboys job, just outside Calgary.
+              <div className="absolute inset-x-0 bottom-0 p-5 bg-gradient-to-t from-black/85 via-black/40 to-transparent">
+                <div className="inline-flex items-center gap-2 text-rope-400 text-[10px] uppercase tracking-[0.25em] font-bold mb-1">
+                  <span className="w-3 h-px bg-rope-400" /> Recent work
+                </div>
+                <div className="text-white text-sm">
+                  Mahogany SE — full asphalt replacement, completed Aug 2025.
+                </div>
               </div>
             </div>
           </Reveal>

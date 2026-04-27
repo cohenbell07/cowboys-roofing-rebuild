@@ -6,14 +6,14 @@ export function Footer() {
     <footer className="bg-black border-t border-white/5">
       <div className="container-x py-16 grid gap-10 lg:grid-cols-4">
         <div className="lg:col-span-2 max-w-md">
-          <Link href="/" aria-label="Home" className="inline-flex bg-white rounded-lg px-4 py-2.5 mb-5">
+          <Link href="/" aria-label="Home" className="inline-flex mb-6">
             <Image
               src="/cowboys-logo.png"
               alt="Cowboys Roofing, Siding & Gutters — Calgary, AB"
               width={1920}
               height={640}
-              sizes="220px"
-              className="h-12 w-auto"
+              sizes="320px"
+              className="h-20 w-auto"
             />
           </Link>
           <p className="text-steel-400 text-sm leading-relaxed mb-6">

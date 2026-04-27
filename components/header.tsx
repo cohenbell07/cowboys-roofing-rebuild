@@ -46,23 +46,21 @@ export function Header() {
 
       {/* Main nav */}
       <header className="sticky top-0 z-30 bg-steel-950/95 backdrop-blur supports-[backdrop-filter]:bg-steel-950/80 border-b border-white/5">
-        <div className="container-x h-20 flex items-center justify-between">
+        <div className="container-x h-24 sm:h-28 flex items-center justify-between">
           <Link
             href="/"
             aria-label="Cowboys Roofing, Siding & Gutters — Calgary, AB · Home"
-            className="flex items-center shrink-0 group"
+            className="flex items-center shrink-0"
           >
-            <span className="bg-white rounded-lg px-3 py-1.5 sm:px-4 sm:py-2 inline-flex items-center transition group-hover:shadow-lg group-hover:shadow-rope-600/20">
-              <Image
-                src="/cowboys-logo.png"
-                alt="Cowboys Roofing, Siding & Gutters — Calgary, AB"
-                width={1920}
-                height={640}
-                priority
-                sizes="180px"
-                className="h-9 sm:h-10 w-auto"
-              />
-            </span>
+            <Image
+              src="/cowboys-logo.png"
+              alt="Cowboys Roofing, Siding & Gutters — Calgary, AB"
+              width={1920}
+              height={640}
+              priority
+              sizes="(min-width: 640px) 280px, 220px"
+              className="h-16 sm:h-20 w-auto"
+            />
           </Link>
 
           <nav className="hidden md:flex items-center gap-7 text-sm font-semibold uppercase tracking-wider text-steel-300">

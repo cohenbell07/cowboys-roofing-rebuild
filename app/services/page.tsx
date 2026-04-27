@@ -119,11 +119,12 @@ export default function ServicesPage() {
               Services
             </div>
             <h1 className="display text-white text-5xl md:text-6xl lg:text-7xl leading-[1.05] mb-6">
-              Anything Exteriors.<br />
-              <span className="text-rope-500">No Short Cuts.</span>
+              One crew.<br />
+              <span className="text-rope-500">Everything outside.</span>
             </h1>
             <p className="text-steel-400 text-lg max-w-xl">
-              One crew, one warranty, one number to call — for everything outside your home.
+              Six services. One warranty. One number to call — for every part of
+              your home&apos;s exterior.
             </p>
           </Reveal>
         </div>

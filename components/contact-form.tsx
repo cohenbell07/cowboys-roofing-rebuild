@@ -71,7 +71,7 @@ export function ContactForm() {
                 name="service"
                 required
                 defaultValue=""
-                className="w-full bg-steel-950 border border-white/10 hover:border-white/20 focus:border-rope-500 focus:outline-none text-white rounded-md px-4 py-3 text-sm transition"
+                className="w-full bg-steel-950/80 border border-white/15 hover:border-white/30 focus:border-rope-500 focus:outline-none focus:ring-4 focus:ring-rope-500/20 text-white placeholder:text-steel-500 rounded-md px-4 py-3 text-sm transition"
               >
                 <option value="" disabled>
                   Select a service…
@@ -95,7 +95,7 @@ export function ContactForm() {
                 id="message"
                 name="message"
                 rows={4}
-                className="w-full bg-steel-950 border border-white/10 hover:border-white/20 focus:border-rope-500 focus:outline-none text-white rounded-md px-4 py-3 text-sm transition"
+                className="w-full bg-steel-950/80 border border-white/15 hover:border-white/30 focus:border-rope-500 focus:outline-none focus:ring-4 focus:ring-rope-500/20 text-white placeholder:text-steel-500 rounded-md px-4 py-3 text-sm transition"
                 placeholder="Hail damage, leaking, age of roof, anything else we should know."
               />
             </div>
@@ -162,7 +162,7 @@ function Field({
         type={type}
         required={required}
         autoComplete={autoComplete}
-        className="w-full bg-steel-950 border border-white/10 hover:border-white/20 focus:border-rope-500 focus:outline-none text-white rounded-md px-4 py-3 text-sm transition"
+        className="w-full bg-steel-950/80 border border-white/15 hover:border-white/30 focus:border-rope-500 focus:outline-none focus:ring-4 focus:ring-rope-500/20 text-white placeholder:text-steel-500 rounded-md px-4 py-3 text-sm transition"
       />
     </div>
   );

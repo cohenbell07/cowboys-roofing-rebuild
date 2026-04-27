@@ -6,9 +6,8 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 
 const NAV = [
-  { label: "Roofing", href: "/services#roofing" },
+  { label: "Services", href: "/services" },
   { label: "Storm Damage", href: "/services#storm" },
-  { label: "Exteriors", href: "/services#exteriors" },
   { label: "About", href: "/about" },
   { label: "Reviews", href: "/#reviews" },
 ];
@@ -45,8 +44,8 @@ export function Header() {
       </div>
 
       {/* Main nav */}
-      <header className="sticky top-0 z-30 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/85 border-b border-steel-200 shadow-sm">
-        <div className="container-x h-24 sm:h-28 flex items-center justify-between">
+      <header className="sticky top-0 z-30 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/85 shadow-[0_1px_0_0_rgba(15,23,42,0.06),0_4px_24px_-12px_rgba(15,23,42,0.18)]">
+        <div className="container-x h-24 sm:h-32 flex items-center justify-between">
           <Link
             href="/"
             aria-label="Cowboys Roofing, Siding & Gutters — Calgary, AB · Home"
@@ -58,8 +57,8 @@ export function Header() {
               width={1920}
               height={640}
               priority
-              sizes="(min-width: 640px) 280px, 220px"
-              className="h-16 sm:h-20 w-auto"
+              sizes="(min-width: 640px) 320px, 260px"
+              className="h-20 sm:h-24 w-auto"
             />
           </Link>
 
@@ -108,6 +107,9 @@ export function Header() {
             </button>
           </div>
         </div>
+
+        {/* Brand accent strip */}
+        <div className="h-1 bg-gradient-to-r from-rope-700 via-rope-500 to-rope-700" />
 
         <AnimatePresence>
           {open && (

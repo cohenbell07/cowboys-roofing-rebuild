@@ -93,10 +93,12 @@ export default function HomePage() {
             fill
             sizes="100vw"
             priority
-            className="object-cover"
+            className="object-cover object-[center_30%]"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-steel-950 via-steel-950/85 to-steel-950/30" />
-          <div className="absolute inset-0 bg-gradient-to-t from-steel-950 via-transparent to-transparent" />
+          {/* Left → right: dark on copy side, near-clear on truck side so the brand photo reads */}
+          <div className="absolute inset-0 bg-gradient-to-r from-steel-950 via-steel-950/75 to-transparent md:to-steel-950/5" />
+          {/* Subtle bottom vignette only — keeps stats strip readable */}
+          <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-steel-950/70 to-transparent" />
         </div>
 
         <div className="relative container-x pt-16 pb-20 lg:pt-24 lg:pb-28">

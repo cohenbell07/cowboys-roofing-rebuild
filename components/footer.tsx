@@ -1,21 +1,21 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export function Footer() {
   return (
     <footer className="bg-black border-t border-white/5">
       <div className="container-x py-16 grid gap-10 lg:grid-cols-4">
         <div className="lg:col-span-2 max-w-md">
-          <div className="flex items-center gap-3 mb-4">
-            <div className="w-10 h-10 rounded-md bg-white text-steel-950 flex items-center justify-center display text-2xl">
-              C
-            </div>
-            <div className="leading-tight">
-              <div className="display text-2xl text-white tracking-wide">COWBOYS</div>
-              <div className="text-[10px] uppercase tracking-[0.25em] text-rope-500 -mt-1">
-                Roofing &amp; Exteriors
-              </div>
-            </div>
-          </div>
+          <Link href="/" aria-label="Home" className="inline-flex bg-white rounded-lg px-4 py-2.5 mb-5">
+            <Image
+              src="/cowboys-logo.png"
+              alt="Cowboys Roofing, Siding & Gutters — Calgary, AB"
+              width={1920}
+              height={640}
+              sizes="220px"
+              className="h-12 w-auto"
+            />
+          </Link>
           <p className="text-steel-400 text-sm leading-relaxed mb-6">
             Calgary&apos;s #1 5-star rated roofing &amp; exteriors company.
             Family-owned, locally operated, and backed by a lifetime workmanship warranty.

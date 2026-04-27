@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 
@@ -46,18 +47,22 @@ export function Header() {
       {/* Main nav */}
       <header className="sticky top-0 z-30 bg-steel-950/95 backdrop-blur supports-[backdrop-filter]:bg-steel-950/80 border-b border-white/5">
         <div className="container-x h-20 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-3 min-w-0">
-            <div className="w-10 h-10 rounded-md bg-white text-steel-950 flex items-center justify-center display text-2xl shrink-0">
-              C
-            </div>
-            <div className="leading-tight min-w-0">
-              <div className="display text-2xl text-white tracking-wide">
-                COWBOYS
-              </div>
-              <div className="text-[10px] uppercase tracking-[0.25em] text-rope-500 -mt-1 truncate">
-                Roofing &amp; Exteriors
-              </div>
-            </div>
+          <Link
+            href="/"
+            aria-label="Cowboys Roofing, Siding & Gutters — Calgary, AB · Home"
+            className="flex items-center shrink-0 group"
+          >
+            <span className="bg-white rounded-lg px-3 py-1.5 sm:px-4 sm:py-2 inline-flex items-center transition group-hover:shadow-lg group-hover:shadow-rope-600/20">
+              <Image
+                src="/cowboys-logo.png"
+                alt="Cowboys Roofing, Siding & Gutters — Calgary, AB"
+                width={1920}
+                height={640}
+                priority
+                sizes="180px"
+                className="h-9 sm:h-10 w-auto"
+              />
+            </span>
           </Link>
 
           <nav className="hidden md:flex items-center gap-7 text-sm font-semibold uppercase tracking-wider text-steel-300">

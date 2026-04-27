@@ -45,7 +45,7 @@ export function Header() {
       </div>
 
       {/* Main nav */}
-      <header className="sticky top-0 z-30 bg-steel-950/95 backdrop-blur supports-[backdrop-filter]:bg-steel-950/80 border-b border-white/5">
+      <header className="sticky top-0 z-30 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/85 border-b border-steel-200 shadow-sm">
         <div className="container-x h-24 sm:h-28 flex items-center justify-between">
           <Link
             href="/"
@@ -63,15 +63,15 @@ export function Header() {
             />
           </Link>
 
-          <nav className="hidden md:flex items-center gap-7 text-sm font-semibold uppercase tracking-wider text-steel-300">
+          <nav className="hidden md:flex items-center gap-7 text-sm font-semibold uppercase tracking-wider text-steel-700">
             {NAV.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="hover:text-white transition relative group"
+                className="hover:text-rope-600 transition relative group"
               >
                 {item.label}
-                <span className="absolute left-0 right-0 -bottom-1.5 h-px bg-rope-500 scale-x-0 group-hover:scale-x-100 origin-left transition" />
+                <span className="absolute left-0 right-0 -bottom-1.5 h-px bg-rope-600 scale-x-0 group-hover:scale-x-100 origin-left transition" />
               </Link>
             ))}
           </nav>
@@ -89,7 +89,7 @@ export function Header() {
               aria-label={open ? "Close menu" : "Open menu"}
               aria-expanded={open}
               onClick={() => setOpen((v) => !v)}
-              className="md:hidden w-11 h-11 inline-flex items-center justify-center rounded-md text-white hover:bg-white/5"
+              className="md:hidden w-11 h-11 inline-flex items-center justify-center rounded-md text-steel-800 hover:bg-steel-100"
             >
               <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round">
                 {open ? (
@@ -116,7 +116,7 @@ export function Header() {
               animate={{ height: "auto", opacity: 1 }}
               exit={{ height: 0, opacity: 0 }}
               transition={{ duration: 0.2 }}
-              className="md:hidden overflow-hidden border-t border-white/5"
+              className="md:hidden overflow-hidden border-t border-steel-200 bg-white"
             >
               <div className="container-x py-4 flex flex-col">
                 {NAV.map((item) => (
@@ -124,7 +124,7 @@ export function Header() {
                     key={item.href}
                     href={item.href}
                     onClick={() => setOpen(false)}
-                    className="py-3 text-base font-semibold uppercase tracking-wider text-steel-200 hover:text-white"
+                    className="py-3 text-base font-semibold uppercase tracking-wider text-steel-700 hover:text-rope-600"
                   >
                     {item.label}
                   </Link>

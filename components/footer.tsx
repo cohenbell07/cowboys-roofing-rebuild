@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export function Footer() {
   return (
-    <footer className="bg-black border-t border-white/5">
+    <footer className="bg-white border-t border-steel-200 text-steel-700">
       <div className="container-x py-16 grid gap-10 lg:grid-cols-4">
         <div className="lg:col-span-2 max-w-md">
           <Link href="/" aria-label="Home" className="inline-flex mb-6">
@@ -16,13 +16,13 @@ export function Footer() {
               className="h-20 w-auto"
             />
           </Link>
-          <p className="text-steel-400 text-sm leading-relaxed mb-6">
+          <p className="text-steel-600 text-sm leading-relaxed mb-6">
             Calgary&apos;s #1 5-star rated roofing &amp; exteriors company.
             Family-owned, locally operated, and backed by a lifetime workmanship warranty.
           </p>
           <a
             href="tel:18449917663"
-            className="inline-flex items-center gap-2 text-white font-semibold hover:text-rope-400"
+            className="inline-flex items-center gap-2 text-steel-900 font-semibold hover:text-rope-600 transition"
           >
             <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
               <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
@@ -32,29 +32,29 @@ export function Footer() {
         </div>
 
         <div>
-          <h4 className="text-xs uppercase tracking-[0.2em] text-steel-500 mb-4">Services</h4>
-          <ul className="space-y-2.5 text-sm text-steel-300">
-            <li><Link href="/services#roofing" className="hover:text-white">Residential roofing</Link></li>
-            <li><Link href="/services#commercial" className="hover:text-white">Commercial roofing</Link></li>
-            <li><Link href="/services#storm" className="hover:text-white">Storm &amp; hail damage</Link></li>
-            <li><Link href="/services#siding" className="hover:text-white">Siding</Link></li>
-            <li><Link href="/services#gutters" className="hover:text-white">Gutters</Link></li>
-            <li><Link href="/services#windows" className="hover:text-white">Windows</Link></li>
+          <h4 className="text-xs uppercase tracking-[0.2em] text-steel-500 mb-4 font-semibold">Services</h4>
+          <ul className="space-y-2.5 text-sm text-steel-600">
+            <li><Link href="/services#roofing" className="hover:text-rope-600 transition">Residential roofing</Link></li>
+            <li><Link href="/services#commercial" className="hover:text-rope-600 transition">Commercial roofing</Link></li>
+            <li><Link href="/services#storm" className="hover:text-rope-600 transition">Storm &amp; hail damage</Link></li>
+            <li><Link href="/services#siding" className="hover:text-rope-600 transition">Siding</Link></li>
+            <li><Link href="/services#gutters" className="hover:text-rope-600 transition">Gutters</Link></li>
+            <li><Link href="/services#windows" className="hover:text-rope-600 transition">Windows</Link></li>
           </ul>
         </div>
 
         <div>
-          <h4 className="text-xs uppercase tracking-[0.2em] text-steel-500 mb-4">Company</h4>
-          <ul className="space-y-2.5 text-sm text-steel-300">
-            <li><Link href="/about" className="hover:text-white">About</Link></li>
-            <li><Link href="/#reviews" className="hover:text-white">Reviews</Link></li>
-            <li><Link href="/contact" className="hover:text-white">Contact</Link></li>
-            <li><Link href="/contact" className="hover:text-white">Book free inspection</Link></li>
+          <h4 className="text-xs uppercase tracking-[0.2em] text-steel-500 mb-4 font-semibold">Company</h4>
+          <ul className="space-y-2.5 text-sm text-steel-600">
+            <li><Link href="/about" className="hover:text-rope-600 transition">About</Link></li>
+            <li><Link href="/#reviews" className="hover:text-rope-600 transition">Reviews</Link></li>
+            <li><Link href="/contact" className="hover:text-rope-600 transition">Contact</Link></li>
+            <li><Link href="/contact" className="hover:text-rope-600 transition">Book free inspection</Link></li>
           </ul>
         </div>
       </div>
 
-      <div className="border-t border-white/5">
+      <div className="border-t border-steel-200">
         <div className="container-x py-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-3 text-xs text-steel-500">
           <div>© {new Date().getFullYear()} Cowboys Roofing &amp; Exteriors Inc. · Calgary, Alberta</div>
           <div className="flex items-center gap-5">
